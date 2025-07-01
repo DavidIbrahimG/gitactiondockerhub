@@ -54,6 +54,7 @@ jobs:
         file: Dockerfile
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/flask-app:${{ github.sha }}  # Added commit hash as tag
+        platforms: linux/amd64,linux/arm64  # Add support for both platforms
 
     - name: Image digest
       run: |
