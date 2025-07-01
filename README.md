@@ -1,0 +1,1 @@
+## This project illustates how a simple Flask app is dockerized and integrated into a CI/CID with github action.
